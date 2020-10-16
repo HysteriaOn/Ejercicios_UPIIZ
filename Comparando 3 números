@@ -1,0 +1,71 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cout << "Introduce el primer numero: ";
+    cin >> a;
+    cout<< "Introduce el segundo numero: ";
+    cin >> b;
+    cout << "Introduce el tercer numero: ";
+    cin >> c;
+
+    if( a>b && b>c){
+        cout << "el numero " << a << " es el mayor" << endl;
+    }
+        else if(a>b && c>b){
+                if(c>a){
+                   cout << "el numero " << c << " es el mayor" << endl;
+        }
+    }
+
+    if(b>a && a>c){
+        cout << "el numero " << b << " es el mayor" << endl;
+    }
+        else if(b>a && c>a){
+                if(c>b){
+                    cout << "el numero " << c << " es el mayor" << endl;
+                }
+        }
+    if(c>a && a>b){
+        cout << "el numero " << c << " es el mayor" << endl;
+    }
+        else if(c>a && b>a){
+            if(a>c){
+                cout << "el numero " << a << " es el mayor" << endl;
+            }
+        }
+
+    if(a==b && b==c){
+        cout<< endl << "Todos los numeros son iguales" << endl;
+    } else if(a==b && c!=b){
+            if(c>b){
+                cout << "el numero " << c << " es el mayor" << endl;
+            }
+                else{
+                    cout << "el numero " << b << " es el mayor" << endl;
+                }
+        }
+
+    else if(b==c && a!=c){
+            if(a>c){
+                cout << "el numero " << a << " es el mayor" << endl;
+            }
+                else{
+                    cout << "el numero " << c << " es el mayor" << endl;
+                }
+        }
+
+    else if(a==c && c!=b){
+            if(b>c){
+                cout << "el numero " << b << " es el mayor" << endl;
+            }
+                else{
+                    cout << "el numero " << c << " es el mayor" << endl;
+                }
+        }
+
+    return 0;
+}
