@@ -15,7 +15,7 @@ int main(){
     }
     if(residuo!=0){
         division=(n+1)/2;
-        cout << division*-1 << endl;
+        cout <<  division*-1 << endl;
     }
 
     return 0;
