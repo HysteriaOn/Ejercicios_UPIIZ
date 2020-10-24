@@ -10,7 +10,11 @@ int main()
 
     cin >> sueldo;
 
-    if((sueldo>=0.01)&&(sueldo<=969.5)){
+
+        if(sueldo==0){
+            cout <<"0"<< endl;
+        }
+        else if((sueldo>=0.01)&&(sueldo<=969.5)){
 
         a = sueldo-0.01;
         b = (a*1.92)/100;
@@ -18,9 +22,7 @@ int main()
 
 
        }
-    else{
-    
-        if((sueldo>=969.51)&&(sueldo<=1703.80)){
+        else if((sueldo>=969.51)&&(sueldo<=1703.80)){
 
         a = sueldo-969.51;
         b = (a*10.88)/100;
@@ -28,47 +30,41 @@ int main()
         printf("%.2f",c);
         }
 
-        if((sueldo>=1703.81)&&(sueldo<=4782.61)){
+        else if((sueldo>=1703.81)&&(sueldo<=4782.61)){
 
         a = sueldo-1703.81;
         b = (a*16)/100;
         c= b+136.85;
         printf("%.2f",c);
         }
-        
-        if((sueldo>=4782.62)&&(sueldo<=14391.44)){
+        else if((sueldo>=4782.62)&&(sueldo<=14391.44)){
 
         a = sueldo-4782.62;
         b = (a*23.52)/100;
         c= b+766.15;
         printf("%.2f",c);
         }
-        
-        if((sueldo>=14391.45)&&(sueldo<=19188.61)){
+        else if((sueldo>=14391.45)&&(sueldo<=19188.61)){
 
         a = sueldo-14391.45;
         b = (a*32)/100;
         c= b+3470.25;
         printf("%.2f",c);
         }
-        
-        if((sueldo>=19188.62)&&(sueldo<=57565.76)){
+        else if((sueldo>=19188.62)&&(sueldo<=57565.76)){
 
         a = sueldo-19188.62;
         b = (a*34)/100;
         c= b+5005.35;
         printf("%.2f",c);
         }
-        
-        if((sueldo>=57565.77)&&(sueldo<=200000)){
+        else if(sueldo>=57565.77){
 
         a = sueldo-57565.77;
         b = (a*35)/100;
         c= b+18053.63;
         printf("%.2f",c);
         }
-
-    }
 
 
     return 0;
