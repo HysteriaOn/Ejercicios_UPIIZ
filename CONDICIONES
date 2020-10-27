@@ -12,18 +12,18 @@ int main()
 
 
         if(sueldo<=0.01){
-                cout << "0" <<endl;
+                cout << "0";
         }
         else if((sueldo>0.01)&&(sueldo<=969.5)){
 
         a = sueldo-0.01;
         b = (a*1.92)/100;
-        printf("%.2f",b);
+        cout << b;
        }
 
 
        else if(sueldo==969.51){
-            cout << "56.91" <<endl;
+            cout << "56.91";
 
        }
         else if((sueldo>969.51)&&(sueldo<=1703.80)){
@@ -31,12 +31,12 @@ int main()
         a = sueldo-969.51;
         b = (a*10.88)/100;
         c= b+56.91;
-        printf("%.2f",c);
+        cout << c;
         }
 
 
          else if(sueldo==1703.81){
-             cout << "136.85" <<endl;
+             cout << "136.85";
 
        }
         else if((sueldo>1703.81)&&(sueldo<=4782.61)){
@@ -44,56 +44,56 @@ int main()
         a = sueldo-1703.81;
         b = (a*16)/100;
         c= b+136.85;
-        printf("%.2f",c);
+        cout << c;
         }
 
 
          else if(sueldo==4782.62){
-            cout << "766.15" <<endl;
+            cout << "766.15" ;
        }
         else if((sueldo>4782.62)&&(sueldo<=14391.44)){
 
         a = sueldo-4782.62;
         b = (a*23.52)/100;
         c= b+766.15;
-        printf("%.2f",c);
+        cout << c;
         }
 
 
          else if(sueldo==14391.45){
-            cout << "3470.25" <<endl;
+            cout << "3470.25";
        }
         else if((sueldo>14391.45)&&(sueldo<=19188.61)){
 
         a = sueldo-14391.45;
         b = (a*32)/100;
         c= b+3470.25;
-        printf("%.2f",c);
+        cout << c;
         }
 
 
          else if(sueldo==19188.62){
-            cout << "5005.35" <<endl;
+            cout << "5005.35";
         }
         else if((sueldo>19188.62)&&(sueldo<=57565.76)){
 
         a = sueldo-19188.62;
         b = (a*34)/100;
         c= b+5005.35;
-        printf("%.2f",c);
+        cout << c;
         }
 
 
 
          else if((sueldo>57565.76)&&(sueldo<57565.78)){
-            cout << "18053.63" <<endl;
+            cout << "18053.63";
        }
         else if(sueldo>57565.77){
 
         a = sueldo-57565.77;
         b = (a*35)/100;
         c= b+18053.63;
-        printf("%.2f",c);
+       cout << c;
         }
 
 
