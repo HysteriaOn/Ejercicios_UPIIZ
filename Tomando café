@@ -10,7 +10,7 @@ int main()
 
     if(h>=8){
 
-        cout << "NO CAFE";
+        cout << " NO CAFE";
     }
     else{
 
