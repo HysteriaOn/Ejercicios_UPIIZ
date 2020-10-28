@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float h,resta;
+
+    cin >>h;
+
+    if(h>=8){
+
+        cout << "NO CAFE";
+    }
+    else{
+
+        resta= (8-h)*1.5;
+        cout <<resta;
+    }
+
+
+    return 0;
+}
