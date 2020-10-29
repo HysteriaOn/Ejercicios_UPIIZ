@@ -14,7 +14,7 @@ int main()
     if(b<c){
         cout <<"DERECHA";
     }
-    if((c>a)&&(c<b)){
+    if((c>=a)&&(c<=b)){
         cout << "INTERVALO";
     }
     return 0;
