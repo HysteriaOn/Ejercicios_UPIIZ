@@ -7,15 +7,15 @@ int main()
     int a,b,c;
 
     cin>>a>>b>>c;
-
-    if(c<a){
-        cout << "IZQUIERDA";
-    }
-    if(b<c){
-        cout <<"DERECHA";
-    }
     if((c>=a)&&(c<=b)){
         cout << "INTERVALO";
+    }else{
+        if(c<a){
+        cout << "IZQUIERDA";
+        }
+        else{
+        cout <<"DERECHA";
+        }
     }
     return 0;
 }
