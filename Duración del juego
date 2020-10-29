@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int ini,fin,dur;
+
+    cin >> ini >> fin;
+
+    if(fin>ini){
+        dur=fin - ini;
+        cout << dur;
+
+    }
+    else{
+        dur=(24-ini)+fin;
+        cout << dur;
+
+    }
+
+
+    return 0;
+}
