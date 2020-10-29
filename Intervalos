@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+
+    cin>>a>>b>>c;
+
+    if(c<a){
+        cout << "IZQUIERDA";
+    }
+    if(b<c){
+        cout <<"DERECHA";
+    }
+    if((c>a)&&(c<b)){
+        cout << "INTERVALO";
+    }
+    return 0;
+}
