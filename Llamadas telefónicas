@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int CLAVE;
+    float NUMIN,x;
+
+    cin >>CLAVE >>NUMIN;
+
+    switch(CLAVE){
+
+case 12:
+    x=NUMIN*2;
+    break;
+case 15:
+    x=NUMIN*2.2;
+    break;
+case 18:
+    x=NUMIN*4.5;
+    break;
+case 19:
+    x=NUMIN*3.5;
+    break;
+case 23:
+    x=NUMIN*6;
+    break;
+case 25:
+    x=NUMIN*6;
+    break;
+case 29:
+    x=NUMIN*5;
+    break;
+default:
+    break;
+    }
+cout<<endl<<x;
+
+
+    return 0;
+}
