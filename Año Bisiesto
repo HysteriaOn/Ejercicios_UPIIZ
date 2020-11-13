@@ -7,16 +7,11 @@ int main()
     int a;
     
     cin >>a;
-    if(a%4==0){
+    if(a%4==0 || a%400==0){
         cout<<"BISIESTO";
     }
     else{
-        if(a%400==0){
-            cout <<"BISIESTO";
-        }
-        else{
             cout<<"NO BISIESTO";
-        }
     }
 
     return 0;
