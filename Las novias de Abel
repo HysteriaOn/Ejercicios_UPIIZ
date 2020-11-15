@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >>N;
+    int horas[N];
+    bool repeticion=1;
+
+    for(int i=0;i<N;i++){
+
+        cin>>horas[i];
+    }
+    for(int i=0;i<N;i++){
+
+        if(horas[i]==horas[i+1]){
+            repeticion=0;
+        }
+    }
+    if(repeticion==1){
+        cout <<"ABEL ERES UN GRANDE"<<endl;
+    }else{
+        cout<<"LO SIENTO ABEL... DAVID SE QUEDA CON TODAS"<<endl;
+    }
+
+    return 0;
+}
