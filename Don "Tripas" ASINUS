@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N,sum=0,i;
+    cin >> N;
+
+    if(N<0){
+        cout<<"INVALIDO";
+        i=N+1;
+    }
+    int vector[N];
+
+
+    for(i=0;i<N;i++){
+
+        cin>> vector[i];
+    }
+
+    for(i=0;i<N;i++){
+
+        if(vector[i]==1){
+            sum+=3;
+        }
+        else if(vector[i]==2){
+            sum+=5;
+        }
+        else if(vector[i]==3){
+            sum+=4;
+        }
+        else if(vector[i]>3 || vector[i]<=0){
+            cout << "INVALIDO" << endl;
+            i=N+1;
+        }
+
+    }
+    if(i==N){
+        cout<<sum;
+    }
+
+    return 0;
+}
