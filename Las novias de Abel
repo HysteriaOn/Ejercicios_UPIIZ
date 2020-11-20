@@ -17,6 +17,7 @@ int main()
 
         if(horas[i]==horas[i+1]){
             repeticion=0;
+            break;
         }
     }
     if(repeticion==1){
