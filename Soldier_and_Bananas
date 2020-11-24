@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int costoI,D,N,sum=0,icostoI;
+
+    cin >> costoI >> D >> N;
+
+    for(int i=1;i<=N;i++){
+        icostoI=i*costoI;
+        sum+=icostoI;
+    }
+        if(D>=sum){
+            cout<<"0";
+        }
+        else{
+            cout<<-1*(D-sum);
+        }
+
+    return 0;
+}
