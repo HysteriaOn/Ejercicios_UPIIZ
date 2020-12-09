@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   int T,N,brincosaltos,brincosbajos;
+        cin>>T;
+    int nbrincos[T][2];
+    int datos[T][50];
+        for(int i=0;i<T;i++){
+            cin>>N;
+            brincosaltos=0;
+            brincosbajos=0;
+            for(int j=0;j<N;j++){
+                cin>>datos[i][j];
+            }
+            for(int j=1;j<N;j++){
+                if(datos[i][j-1]>datos[i][j]){
+                    brincosbajos++;
+                }else if(datos[i][j-1]<datos[i][j]){
+                    brincosaltos++;
+                }
+            }
+
+         nbrincos[i][0]=brincosaltos;
+         nbrincos[i][1]=brincosbajos;
+
+        }
+
+    for(int i=0;i<T;i++){
+            cout<<"Escenario "<<i+1<<": ";
+        for(int j=0;j<2;j++){
+
+            cout<<nbrincos[i][j]<<" ";
+
+        }
+            cout<<endl;
+    }
+
+    return 0;
+}
