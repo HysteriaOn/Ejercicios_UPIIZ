@@ -1,0 +1,54 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int N,M,a,b,c;
+    cin>>N;
+    double datos[N][3];
+    for(int i=0;i<N;i++){
+        cin>>M;
+        switch(M)
+        {
+        case 1:
+            cin>>a;
+            datos[i][1]=fabs(a);
+            datos[i][2]=0;
+            break;
+        case 2:
+            cin>>a>>b;
+            datos[i][1]=max(a,b);
+            datos[i][2]=0;
+            break;
+        case 3:
+            cin>>a>>b;
+            datos[i][1]=min(a,b);
+            datos[i][2]=0;
+            break;
+        case 4:
+            cin>>c;
+            datos[i][1]=sqrt(c);
+            datos[i][2]=1;
+            break;
+        case 5:
+            cin>>c>>a;
+            datos[i][1]=pow(c,a);
+            datos[i][2]=0;
+            break;
+        }
+
+    }
+    for(int i=0;i<N;i++){
+        if(datos[i][2]==1){
+            printf("%.2lf",datos[i][1]);
+        }else{
+            printf("%.0lf",datos[i][1]);
+        }
+        cout<<endl;
+
+    }
+
+    return 0;
+}
